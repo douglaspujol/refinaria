@@ -1,13 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import Main from './Pages/Main.js/Index';
 import GlobalStyle from './styles/global';
+import store from './Store';
 
 function App() {
     return (
-        <div className="App">
+        <Provider store={store}>
             <Main />
             <GlobalStyle />
-        </div>
+        </Provider>
     );
 }
 
