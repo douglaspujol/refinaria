@@ -10,6 +10,7 @@ export const INITIAL_STATE = {
     messageErr: null,
     step: 0,
     carregando: false,
+    idCard: null,
 };
 export default function pesquisa(state = INITIAL_STATE, action) {
     return produce(state, draft => {
@@ -41,15 +42,13 @@ export default function pesquisa(state = INITIAL_STATE, action) {
                 draft.messageErr = err;
                 break;
             }
+            case '@id/CARD': {
+                const { id } = action.payload;
+                draft.idCard = id;
+                break;
+            }
 
             default:
         }
     });
 }
-/*
-   {
-            Title: 'Back to the Future',
-            Year: '1985',
-            imdbID: 'tt0088763',
-        },
-*/

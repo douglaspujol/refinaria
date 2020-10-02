@@ -28,3 +28,9 @@ export function errorRequest(err) {
         payload: { err },
     };
 }
+export function idCard(id) {
+    return {
+        type: '@id/CARD',
+        payload: { id },
+    };
+}
