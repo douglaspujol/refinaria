@@ -12,32 +12,6 @@ export const Container = styled.div`
     p {
         margin-bottom: 10px;
     }
-    div.categorias {
-        button {
-            width: calc(50% - 7px);
-            height: 35px;
-            line-height: 35px;
-            text-align: center;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            color: #777;
-            font-size: 14px;
-            text-transform: uppercase;
-            cursor: pointer;
-            outline: 0;
-            &:hover {
-                border: 1px solid #389cf2;
-                color: #389cf2;
-                transition: all 0.3s;
-            }
-            &:last-child {
-                margin-left: 7px;
-            }
-            &:first-child {
-                margin-right: 7px;
-            }
-        }
-    }
     form {
         display: flex;
         flex-direction: column;
@@ -65,5 +39,35 @@ export const Container = styled.div`
             cursor: pointer;
             outline: 0;
         }
+    }
+`;
+export const Options = styled.div`
+    button {
+        width: calc(50% - 7px);
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: #777;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+        outline: 0;
+        &:hover {
+            border: 1px solid #389cf2;
+            color: #389cf2;
+            transition: all 0.3s;
+        }
+        &:last-child {
+            margin-left: 7px;
+        }
+        &:first-child {
+            margin-right: 7px;
+        }
+    }
+    button.select {
+        border: 1px solid #389cf2;
+        color: #389cf2;
     }
 `;
